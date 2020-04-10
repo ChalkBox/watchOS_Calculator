@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc" pageOrientation="vertical">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--EasyCalc-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="EasyCalc" contentMode="scaleAspectFit" hidesWhenLoading="NO" fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="calc_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="right" text="0" textAlignment="right" id="DEL-EK-KLt">
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer id="0nx-kC-SFe">
+                                    <connections>
+                                        <action selector="clearValue:" destination="AgC-eL-Hgc" id="fSY-EX-cgg"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
+                        </label>
+                        <group width="1" height="0.84999999999999998" alignment="left" layout="vertical" id="Lo9-Gf-qP1">
+                            <items>
+                                <group height="0.25" alignment="center" id="1A1-VO-9V1">
+                                    <items>
+                                        <button width="0.25" height="1" alignment="left" title="7" id="YjD-YC-plA" userLabel="button7">
+                                            <connections>
+                                                <action selector="button7tapped" destination="AgC-eL-Hgc" id="Vvl-Tq-WJ4"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="8" id="me0-B6-px2" userLabel="button8">
+                                            <connections>
+                                                <action selector="button8tapped" destination="AgC-eL-Hgc" id="rKr-00-yiH"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="9" id="vJ3-yF-Oi7" userLabel="button9">
+                                            <connections>
+                                                <action selector="button9tapped" destination="AgC-eL-Hgc" id="ryX-FG-UjB"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="x" id="ZqI-If-dxX">
+                                            <color key="backgroundColor" red="0.21809154750000001" green="0.4792224169" blue="0.93734163049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="multiplyTapped" destination="AgC-eL-Hgc" id="Xc7-Yo-nh6"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <variation key="device=watch38mm" contentMode="scaleToFill"/>
+                                </group>
+                                <group height="0.25" alignment="center" id="r0c-D7-KbY">
+                                    <items>
+                                        <button width="0.25" height="1" alignment="left" title="4" id="Qpd-jn-MHC" userLabel="button4">
+                                            <connections>
+                                                <action selector="button4tapped" destination="AgC-eL-Hgc" id="pUd-yg-Ang"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="5" id="aAd-vF-5q7" userLabel="button5">
+                                            <connections>
+                                                <action selector="button5tapped" destination="AgC-eL-Hgc" id="JTG-xb-EJI"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="6" id="CMv-Cn-qGj" userLabel="button6">
+                                            <connections>
+                                                <action selector="button6tapped" destination="AgC-eL-Hgc" id="Zg4-gt-SGR"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="+" id="hRh-gR-Dba">
+                                            <color key="backgroundColor" red="0.21809154750000001" green="0.4792224169" blue="0.93734163049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="addTapped" destination="AgC-eL-Hgc" id="0ZJ-Aa-3Uv"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <variation key="device=watch38mm" contentMode="scaleToFill"/>
+                                </group>
+                                <group width="1" height="0.25" alignment="center" id="KdO-RM-RSm">
+                                    <items>
+                                        <button width="0.25" height="1" alignment="left" title="1" id="IhO-Gv-PgR" userLabel="button1">
+                                            <connections>
+                                                <action selector="button1tapped" destination="AgC-eL-Hgc" id="xd3-Pn-Pva"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="2" id="IeB-cl-lh5" userLabel="button2">
+                                            <connections>
+                                                <action selector="button2tapped" destination="AgC-eL-Hgc" id="ZBx-RU-vDm"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="3" id="aWV-JF-1Cw" userLabel="button3">
+                                            <connections>
+                                                <action selector="button3tapped" destination="AgC-eL-Hgc" id="yJI-Oz-i1p"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="-" id="Ksd-oN-ped">
+                                            <color key="backgroundColor" red="0.21809154750000001" green="0.4792224169" blue="0.93734163049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="subtractTapped" destination="AgC-eL-Hgc" id="hLn-cY-gxq"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <variation key="device=watch38mm" contentMode="scaleToFill"/>
+                                </group>
+                                <group height="0.25" alignment="center" id="4w5-Kn-46q">
+                                    <items>
+                                        <button width="0.25" height="1" alignment="left" title="0" id="j9J-uT-bsD" userLabel="button0">
+                                            <connections>
+                                                <action selector="button0tapped" destination="AgC-eL-Hgc" id="hCM-l2-iEF"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="." id="rBh-zI-ehR" userLabel="buttonDecimal">
+                                            <connections>
+                                                <action selector="decimalTapped" destination="AgC-eL-Hgc" id="uQj-6X-92e"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="=" id="ygv-ct-a4V" userLabel="buttonEquals">
+                                            <color key="backgroundColor" red="0.21809154750000001" green="0.4792224169" blue="0.93734163049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="answerTapped" destination="AgC-eL-Hgc" id="bjz-hh-bqm"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="1" alignment="left" title="÷" id="5hY-sY-xl1">
+                                            <color key="backgroundColor" red="0.21809154750000001" green="0.4792224169" blue="0.93734163049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="divideTapped" destination="AgC-eL-Hgc" id="3za-rU-8bb"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <variation key="device=watch38mm" contentMode="scaleToFill"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="calculationDisplay" destination="DEL-EK-KLt" id="Aw9-cp-T7Z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="-9.1538461538461551"/>
+        </scene>
+    </scenes>
+</document>
